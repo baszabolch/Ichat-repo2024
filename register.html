@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="main">
+    <div class="container">
+        <div class="row shadow">
+            <form action="" class="d-flex padding-from">
+                <div class="col-12 jstf-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                      </svg>  iChat regisztráció
+                </div>
+                <div class="col-6 jstf-center">
+                    <label for="name" class="form-label">Név</label>
+                    <input type="text" id="name" class="form-control" placeholder="Hogy hívnak?" name="name" value="">
+                </div>
+                <div class="col-6 jstf-center">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="text" id="email" class="form-control" placeholder="E-mail címed" name="email" value="">
+                </div>
+                <div class="col-6">
+                    <label for="living_country" class="form-label">Lakhely (ország)</label>
+                    <input type="text" id="living_country" class="form-control" placeholder="Lakhelyed?" name="living_country" value="">
+                </div>
+                <div class="col-6">
+                    <label for="living_city" class="form-label">Város</label>
+                    <input id="living_city" class="form-control " name="living_city" list="cities" value="">
+                    <datalist id="cities"></datalist>
+                </div>
+                <div class="col-6">
+                    <label for="phone" class="form-label">Telefonszám</label>
+                    <input type="text" id="phone" class="form-control " placeholder="Csak számjegyeket adj meg" name="phone" value="">
+                </div>
+                <div class="col-6">
+                    <label for="birth_date" class="form-label">Születési dátum</label>
+                    <input type="date" id="birth_date" class="form-control " name="birth_date" value="">
+                </div>
+                <div class="col-6">
+                    <label for="password" class="form-label">Jelszó</label>
+                    <input type="password" id="password" class="form-control " placeholder="Jelszavad" name="password" value="">
+                </div>
+                <div class="col-6">
+                    <label for="password_confirmation" class="form-label">Jelszó ismét</label>
+                    <input type="password" id="password_confirmation" class="form-control " placeholder="Jelszavad ismét" name="password_confirmation" value="">
+                </div>
+                <div>
+                    "Nemed"
+                    <div class="col-12 padding-from">
+                        <input type="radio" id="gender_male" class=" form-check-input csekbox " name="gender" value="m">
+                        <label for="gender_male" class="form-check-label">Férfi</label>
+                        <br>
+                        <input type="radio" id="gender_female" class=" form-check-input csekbox" name="gender" value="f">
+                        <label for="gender_female" class="form-check-label">Nő</label>
+                        <br>
+                        <input type="radio" id="gender_other" class=" form-check-input csekbox" name="gender" value="o">
+                        <label for="gender_other" class="form-check-label">Egyéb</label>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <div>
+                        <input type="checkbox" id="privacy" class=" form-check-input " name="privacy" value="1">
+                        <label for="privacy" class="form-check-label">A felhasználási feltételeket elfogadom</label>
+                    </div>
+                </div>
+                <div class="col-12 jstf-center">
+                    <button class="btn btn-primary d-block w-100">Regisztráció</button>
+                </div>
+                <div class="col-12 jstf-center">
+                    <a href="/password-forgotten">Elfelejtetted a jelszavad?</a>
+                    <br>
+                    <a href="/login">Már regisztráltál?</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="jstf-center">
+    <p class="text-center ">Copyright © iChat, 2023</p>
+</footer>
+
+
+    
+</body>
+</html>

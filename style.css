@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #e1ecfb, #bcd8ff, #fdb0fd);
+    height: 100vh;
+    overflow: hidden;
+    -webkit-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+    background: linear-gradient(270deg,#e1ecfb,#bcd8ff,#fdb0fd);
+
+}
+.d-flex {
+    display: flex;
+   flex-direction: column;
+   flex-wrap:wrap-reverse;
+}
+.center {
+    border: dashed 1px yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    width: 450px;
+    display: flex;
+
+}
+.text-center {
+    text-align: center;
+    border-bottom: 1px solid silver;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+i {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: dotted yellow 1px;
+}
+input {
+    border: 1px solid silver;
+    font-size: 16px;
+    width: 100%;
+
+}
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0049b4;
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    color: wheat;
+}
+a {
+    color: #0d6efd;
+}
+.form-div {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+svg {
+    padding-top: 8px;
+}
+.kozepre {
+    text-align: center;
+}
+@media screen and ( min-width:576px) {
+    .form-div {
+        width: 100%;
+    }
+}
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}
